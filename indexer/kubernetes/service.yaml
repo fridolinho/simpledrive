@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: indexer
+  labels:
+    app: indexer
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: indexer
